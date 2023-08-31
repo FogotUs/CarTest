@@ -30,9 +30,7 @@ abstract class Vehicle implements VehicleInterface{
         $this -> Speed = $speed;
     }
 
-    public function getInfo():string{
-        return "{$this->getModel()}, {$this->getSpeed()}Km/h, $ {$this->getPrice()}";
-    }
+    public abstract function getInfo();
 
 }
 

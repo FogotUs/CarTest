@@ -8,6 +8,12 @@ require_once("../vendor/autoload.php");
 $car = new Car("BMW",1488,2435);
 $heli = new Helicopter("littleBird",456,1337);
 $moto = new Motorbike ("RedHeadBandit",34,500);
-$park = new Park(2,[$car,$heli,$moto]);
-print_r($park);
+$park = new Park();
+$park->setCars([$heli]);
+$park->setCars([$car]);
+$park->setCars([$moto]);
+print_r("{$park->sumCost()}\n");
+print_r("{$park->maxCost()}\n");
+print_r("{$park->middleCost()}\n");
+print_r($park->massInfo());
 ?>

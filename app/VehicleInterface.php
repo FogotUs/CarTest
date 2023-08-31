@@ -7,5 +7,8 @@ interface VehicleInterface{
     public function getSpeed();
     public function getInfo();
     
+    public function setModel(string $model);
+    public function setPrice(int $price);
+    public function setSpeed(int $speed);
 }
 ?>
